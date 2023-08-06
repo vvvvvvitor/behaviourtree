@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://4a6a88hi6gdx"]
+
+[ext_resource type="Script" path="res://addons/behaviourtree/classes/behaviour_node.gd" id="1_kgu8y"]
+[ext_resource type="Script" path="res://addons/behaviourtree/classes/behaviour_tree.gd" id="1_t81sh"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BehaviourTree" type="Node" parent="."]
+script = ExtResource("1_t81sh")
+
+[node name="BehaviourNode" type="Node" parent="BehaviourTree"]
+script = ExtResource("1_kgu8y")
